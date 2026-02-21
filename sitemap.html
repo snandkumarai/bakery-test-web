@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Bakerville — Anoka, MN's neighborhood bakery & café. Complete website sitemap." />
+  <title>Bakerville | Complete Website — Site Map</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🍞%3C/text%3E%3C/svg%3E" />
+  <style>
+    .sitemap-hero {
+      background: linear-gradient(to bottom, rgba(26,26,26,0.6), rgba(26,26,26,0.8)),
+                  url('https://images.unsplash.com/photo-1517433670267-08bbd4be890f?w=2000&q=80') center/cover;
+      color: white;
+      padding: 8rem 1rem 4rem;
+      text-align: center;
+    }
+    .sitemap-hero h1 {
+      font-size: clamp(3rem, 7vw, 6rem);
+      font-weight: 300;
+    }
+    .sitemap-hero p {
+      margin-top: 1rem;
+      font-size: 1.125rem;
+      opacity: 0.7;
+      max-width: 32rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .page-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 2rem;
+      padding: 4rem 0;
+    }
+    .page-card {
+      background: var(--color-paper);
+      border-radius: var(--radius-xl);
+      border: 1px solid rgba(26,26,26,0.05);
+      padding: 2.5rem;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      display: block;
+    }
+    .page-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.08);
+      border-color: var(--color-olive);
+    }
+    .page-card .emoji {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .page-card h3 {
+      font-family: var(--font-serif);
+      font-size: 1.75rem;
+      font-weight: 400;
+      margin-bottom: 0.75rem;
+    }
+    .page-card p {
+      font-size: 0.875rem;
+      color: rgba(26,26,26,0.55);
+      line-height: 1.7;
+    }
+    .page-card .tag {
+      display: inline-block;
+      margin-top: 1rem;
+      font-size: 0.6875rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--color-olive);
+    }
+    .home-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--color-olive);
+      color: white;
+      border-radius: 9999px;
+      padding: 1rem 2rem;
+      font-size: 0.875rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      margin-top: 2rem;
+      transition: all 0.2s;
+    }
+    .home-link:hover { opacity: 0.9; transform: scale(1.03); }
+    .footer-mini {
+      text-align: center;
+      padding: 3rem 1rem;
+      background: var(--color-ink);
+      color: var(--color-paper);
+      font-size: 0.625rem;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      opacity: 0.4;
+    }
+  </style>
+</head>
+<body>
+  <!-- Hero -->
+  <section class="sitemap-hero">
+    <div class="section-label" style="color: rgba(255,255,255,0.6); margin-bottom: 1.5rem;">Complete Website</div>
+    <h1>Bakerville</h1>
+    <p>Anoka's scratch-made sourdough, European pastries & Nordic-inspired baked goods. Browse every page of our website below.</p>
+    <a href="../index.html" class="home-link">← Visit Homepage</a>
+  </section>
+
+  <!-- Page Grid -->
+  <div class="container">
+    <div class="page-grid">
+
+      <a href="full-menu.html" class="page-card">
+        <div class="emoji">📋</div>
+        <h3>Full Menu</h3>
+        <p>Browse our complete menu with category filters, dietary options, and the ability to add items directly to your cart.</p>
+        <span class="tag">Menu →</span>
+      </a>
+
+      <a href="shopping-cart.html" class="page-card">
+        <div class="emoji">🛒</div>
+        <h3>Shopping Cart</h3>
+        <p>Review your basket, adjust quantities, choose between pickup or delivery, and proceed to checkout.</p>
+        <span class="tag">Cart →</span>
+      </a>
+
+      <a href="checkout.html" class="page-card">
+        <div class="emoji">💳</div>
+        <h3>Checkout</h3>
+        <p>Complete your order with contact details, pickup/delivery options, and secure payment processing.</p>
+        <span class="tag">Checkout →</span>
+      </a>
+
+      <a href="order-confirmation.html" class="page-card">
+        <div class="emoji">✅</div>
+        <h3>Order Confirmation</h3>
+        <p>Your order is confirmed! View your order details, pickup instructions, and receipt.</p>
+        <span class="tag">Confirmation →</span>
+      </a>
+
+      <a href="contact-catering.html" class="page-card">
+        <div class="emoji">📩</div>
+        <h3>Contact & Catering</h3>
+        <p>Submit catering inquiries, book private events, or reach us with general questions. Includes FAQ and map.</p>
+        <span class="tag">Contact →</span>
+      </a>
+
+      <a href="our-story.html" class="page-card">
+        <div class="emoji">📖</div>
+        <h3>Our Story</h3>
+        <p>The Bakerville journey from 2012 to today — our founders, milestones, values, and commitment to community.</p>
+        <span class="tag">About →</span>
+      </a>
+
+      <a href="gift-cards.html" class="page-card">
+        <div class="emoji">🎁</div>
+        <h3>Gift Cards</h3>
+        <p>Purchase digital or physical gift cards for the bread lover in your life. Check your balance online.</p>
+        <span class="tag">Gift Cards →</span>
+      </a>
+
+      <a href="careers.html" class="page-card">
+        <div class="emoji">💼</div>
+        <h3>Careers</h3>
+        <p>Join our baking team! View current openings, perks, and submit your application to become part of the Bakerville family.</p>
+        <span class="tag">Careers →</span>
+      </a>
+
+      <a href="wholesale.html" class="page-card">
+        <div class="emoji">🏭</div>
+        <h3>Wholesale</h3>
+        <p>Partner with Bakerville for wholesale bread and pastry supply. Restaurants, cafés, and retailers welcome.</p>
+        <span class="tag">Wholesale →</span>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer-mini">
+    © 2026 Bakerville Artisanal Bakery & Café · Downtown Anoka, Minnesota · All rights reserved.
+  </footer>
+</body>
+</html>
